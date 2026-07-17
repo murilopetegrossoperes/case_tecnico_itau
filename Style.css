@@ -1,0 +1,122 @@
+   /* ===================== ESTILO (CSS) =====================
+     Aqui fica só a aparência: cores, espaçamento, tipografia.*/
+ 
+ :root{
+    --bg: #0f1720;
+    --card: #16212c;
+    --accent: #FF6200;
+    --accent-soft: #16212c;
+    --text: #e6edf3;
+    --muted: #93a1ad;
+    --border: #22303c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 32px 16px;
+  }
+
+  .painel{
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  header h1{
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  header p{
+    color: var(--muted);
+    margin-top:0;
+    font-size: 0.9rem;
+  }
+
+  .filtros{
+    display:flex;
+    gap:8px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .filtro{
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background .15s ease, border-color .15s ease;
+  }
+
+  .filtro:hover{ border-color: var(--accent); }
+
+  .filtro.ativo{
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .comunicado{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+
+  .comunicado .tag{
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--accent);
+  }
+
+  .comunicado h3{
+    margin: 4px 0 6px 0;
+    font-size: 1rem;
+  }
+
+  .comunicado p{
+    margin: 0 0 10px 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .marcar-lido{
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+
+  .marcar-lido.lido{
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .resumo{
+    margin-top: 24px;
+    padding: 14px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+
+  .resumo strong{ color: var(--text); }
+
+  .oculto{ display: none; }

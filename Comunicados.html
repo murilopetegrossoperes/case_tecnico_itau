@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Style.css">
+<title>Painel de Comunicados</title>
+
+<!-- ===================== ESTRUTURA (HTML) =====================
+     Aqui só existe o "esqueleto" da página: quais elementos existem
+     e como eles se organizam. Nenhuma cor, fonte ou comportamento
+     de clique fica definida aqui — isso é proposital, para que a
+     estrutura continue funcionando mesmo se o estilo ou o script
+     mudarem no futuro (útil no SharePoint, onde o CSS às vezes é
+     sobrescrito pelo tema do site). */
+-->
+
+</head>
+<body>
+
+<div class="painel">
+  <header>
+    <h1>Painel de Comunicados</h1>
+    <p>Filtre por canal e marque o que já leu.</p>
+  </header>
+
+  <div class="filtros" id="filtros">
+    <button class="filtro ativo" data-canal="todos">Todos</button>
+    <button class="filtro" data-canal="email">E-mail</button>
+    <button class="filtro" data-canal="whatsapp">WhatsApp</button>
+    <button class="filtro" data-canal="intranet">Intranet</button>
+  </div>
+
+  <div id="lista-comunicados"></div>
+
+  <div class="resumo" id="resumo">
+    <strong>0</strong> de <strong>0</strong> comunicados lidos.
+  </div>
+</div>
+    <script src="Script.js"></script>
+
+
+</body>
+</html>
