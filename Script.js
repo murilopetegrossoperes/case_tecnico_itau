@@ -2,8 +2,7 @@
      Aqui fica a lógica: dados, estado e as reações a clique. 
      O JS lê a estrutura (HTML) e aplica classes já definidas no CSS */
 
-  // "Banco de dados" do painel. No SharePoint real, isso viria de
-  // uma lista do SharePoint (via API REST) em vez de estar fixo aqui.
+
   const comunicados = [
     { id: 1, canal: 'email',    titulo: 'Nova política de envio', texto: 'A partir de agosto, o horário padrão de disparo muda para 8h.' },
     { id: 2, canal: 'whatsapp', titulo: 'Manutenção programada',   texto: 'O canal de WhatsApp ficará indisponível no sábado, das 2h às 4h.' },
